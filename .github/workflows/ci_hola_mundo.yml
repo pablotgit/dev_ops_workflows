@@ -11,6 +11,9 @@ jobs:
          uses: actions/setup-node@v4
          with:
            node-version: 20
+
+       - name: Ver versión de Node.js
+         run: node --version
          
        - name: Ejecutar index.js  
          run: node index.js 

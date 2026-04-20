@@ -15,5 +15,6 @@ jobs:
           echo ${{ steps.ip.outputs.ipv6 }}
       - name: Get Release
         run: lsb_release -a
-
-    
+      - name: fecha server
+        run: echo $(date)
+  

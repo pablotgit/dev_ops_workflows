@@ -23,4 +23,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Corre script menor
-        run: echo {{ inputs.nombre }} es mayor de edad 
+        run: echo {{ inputs.nombre }} es menor de edad 

@@ -33,7 +33,7 @@ jobs:
        run: echo ${{ github.ref }} - ${{ github.repository }} - ${{ github.event.issue.title }}
      - id: obtener_version
        run: echo "version=1.0.0" >> $GITHUB.OUTPUT 
-     - run: echo ${{ steps.obtener_version.outputs.version }}
+     - run: echo ${{steps.obtener_version.outputs.version}}
   mayor:
    if: ${{ inputs.edad >= 18 }}
    runs-on: ubuntu-latest

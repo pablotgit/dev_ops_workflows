@@ -37,3 +37,5 @@ jobs:
     steps:
       - name: Corre script menor
         run: echo ${{ inputs.nombre }} es menor de edad 
+      - name: Que valor tiene el input
+        run: echo ${{ inputs.nombre }} - ${{ inputs.edad }}

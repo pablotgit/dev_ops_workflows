@@ -17,10 +17,10 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: Correr script
-       run: echo {{ inputs.nombre }} es mayor de edad
+       run: echo ${{ inputs.nombre }} es mayor de edad
   menor:
     if: ${{ inputs.edad < 18 }}
     runs-on: ubuntu-latest
     steps:
       - name: Corre script menor
-        run: echo {{ inputs.nombre }} es menor de edad 
+        run: echo ${{ inputs.nombre }} es menor de edad 
